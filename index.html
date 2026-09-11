@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meine erste Website</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<body>
+<div class="hamburger" onclick="toggleMenu()">
+    ☰
+</div>
+
+<div id="menu" class="menu">
+    <a href="kontakt.html">Kontakt</a>
+</div>
 
 <h1>Willkommen auf meiner Website</h1>
 
@@ -23,11 +28,17 @@
     Mein Name ist MikeTheHype und ich lerne Webentwicklung.
 </p>
 
-<button onclick="alert('Vielen Dank für deinen Besuch!')">
-    Kontakt
-</button>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("menu");
 
-</body>
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+</script>
 
 </body>
 </html>
