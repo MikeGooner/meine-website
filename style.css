@@ -9,19 +9,6 @@ h1 {
     color: #3498db;
 }
 
-button {
-    background-color: #3498db;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #2980b9;
-}
-
 .hamburger {
     position: fixed;
     top: 20px;
@@ -39,12 +26,14 @@ button:hover {
     background: white;
     border: 1px solid #ccc;
     border-radius: 6px;
-    min-width: 200px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    min-width: 220px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
+
 .menu.show {
     display: block;
 }
+
 .menu a {
     display: block;
     padding: 12px;
@@ -54,21 +43,4 @@ button:hover {
 
 .menu a:hover {
     background-color: #f0f0f0;
-}
-
-form {
-    width: 400px;
-    margin: 30px auto;
-}
-
-label {
-    display: block;
-    text-align: left;
-    margin-top: 15px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
 }

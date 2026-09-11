@@ -3,16 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine Webseite</title>
+    <title>Über mich</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Meine erste Webseite</h1>
+<div class="hamburger" onclick="toggleMenu()">
+    ☰
+</div>
 
-<p>
-    Hier kann ich einen einfachen Text schreiben.
-    Dieser Text wird auf der Webseite angezeigt.
-</p>
+<div id="menu" class="menu">
+    <a href="index.html">🏠 Startseite</a>
+    <a href="uebermich.html">👤 Über mich</a>
+    <a href="kontakt.html">📞 Kontakt</a>
+</div>
+
+<h1>Über mich</h1>
+
+<p>Mein Name ist Mike.</p>
+
+<p>Ich lerne aktuell HTML, CSS und GitHub Pages.</p>
+
+<script src="menu.js"></script>
 
 </body>
 </html>

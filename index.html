@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine erste Website</title>
+    <title>Startseite</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="menuButton" class="hamburger">
+<div class="hamburger" onclick="toggleMenu()">
     ☰
 </div>
 
 <div id="menu" class="menu">
-    <a href="kontakt.html">Kontakt</a>
-    <a href="uebermich.html">Über mich</a>
+    <a href="index.html">🏠 Startseite</a>
+    <a href="uebermich.html">👤 Über mich</a>
+    <a href="kontakt.html">📞 Kontakt</a>
 </div>
 
 <h1>Willkommen auf meiner Website</h1>
@@ -29,23 +30,7 @@
     Mein Name ist Mike und ich lerne Webentwicklung.
 </p>
 
-<script>
-    const menu = document.getElementById("menu");
-    const menuButton = document.getElementById("menuButton");
-
-    menuButton.addEventListener("click", function (event) {
-        event.stopPropagation();
-        menu.classList.toggle("show");
-    });
-
-    menu.addEventListener("click", function (event) {
-        event.stopPropagation();
-    });
-
-    document.addEventListener("click", function () {
-        menu.classList.remove("show");
-    });
-</script>
+<script src="menu.js"></script>
 
 </body>
 </html>
